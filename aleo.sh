@@ -121,8 +121,6 @@ install_snarkos(){
 
 	echo “账户和密钥保存在 ${KeyFile}，请妥善保管，以下是详细信息：”
 	cat ${KeyFile}
-	
-	run_prover
 }
 
 # 运行client节点
