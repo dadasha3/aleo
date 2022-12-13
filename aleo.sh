@@ -155,11 +155,11 @@ run_prover(){
         screen -x -S ${ScreenName} -p 0 -X stuff "${cmd}"
         screen -x -S ${ScreenName} -p 0 -X stuff $'\n'
         echo "client节点已在screen中启动，可执行脚本命令5 来查看节点运行情况"
-	
+    	cat ${KeyFile}
+    	;;
 }
 
 
     	run_prover
     	;;
-    	cat ${KeyFile}
-    	;;
+
