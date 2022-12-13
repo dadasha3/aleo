@@ -158,7 +158,8 @@ run_prover(){
 	
 }
 
-	install_snarkos
-    	;;
+
     	run_prover
+    	;;
+    	cat ${KeyFile}
     	;;
