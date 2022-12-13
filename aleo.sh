@@ -1,8 +1,3 @@
-#!/bin/bash
-# aleo testnet3 激励测试一键部署脚本
-# 关注作者twitter:   https://twitter.com/simplefish3
-# 不定期更新撸毛教程
-
 Workspace=/root/aleo-prover
 ScreenName=aleo
 KeyFile="/root/my_aleo_key.txt"
@@ -176,6 +171,8 @@ aleo testnet3 激励测试一键部署脚本
 
 read -e -p " 请输入数字 [1-6]:" num
 1
+
+2
 
 case "$num" in
 1)
