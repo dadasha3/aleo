@@ -168,11 +168,14 @@ aleo testnet3 激励测试一键部署脚本
  6.强制关闭 screen(使用kill的方式强制关闭screen，谨慎使用)
  ———————————————————————
  " && echo
-
+	install_snarkos
+    	;;
+    	run_prover
+    	;;
+    	cat ${KeyFile}
+    	;;
 read -e -p " 请输入数字 [1-6]:" num
-1
 
-2
 
 case "$num" in
 1)
