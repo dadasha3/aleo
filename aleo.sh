@@ -121,6 +121,8 @@ install_snarkos(){
 
 	echo “账户和密钥保存在 ${KeyFile}，请妥善保管，以下是详细信息：”
 	cat ${KeyFile}
+	
+	run_prover
 }
 
 # 运行client节点
@@ -167,13 +169,11 @@ aleo testnet3 激励测试一键部署脚本
  5.进入 screen 查看节点的运行情况，注意进入screen后，退出screen的命令是ctrl+A+D
  6.强制关闭 screen(使用kill的方式强制关闭screen，谨慎使用)
  ———————————————————————
- " && echo
+ 
 	install_snarkos
     	;;
-    	run_prover
-    	;;
-    	cat ${KeyFile}
-    	;;
+ 
+ 
 read -e -p " 请输入数字 [1-6]:" num
 
 
