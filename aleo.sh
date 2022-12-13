@@ -1,3 +1,8 @@
+#!/bin/bash
+# aleo testnet3 激励测试一键部署脚本
+# 关注作者twitter:   https://twitter.com/simplefish3
+# 不定期更新撸毛教程
+
 Workspace=/root/aleo-prover
 ScreenName=aleo
 KeyFile="/root/my_aleo_key.txt"
@@ -167,14 +172,9 @@ aleo testnet3 激励测试一键部署脚本
  5.进入 screen 查看节点的运行情况，注意进入screen后，退出screen的命令是ctrl+A+D
  6.强制关闭 screen(使用kill的方式强制关闭screen，谨慎使用)
  ———————————————————————
- 
-	install_snarkos
-    	;;
- 
- 
+ " && echo
+
 read -e -p " 请输入数字 [1-6]:" num
-
-
 case "$num" in
 1)
 	install_snarkos
