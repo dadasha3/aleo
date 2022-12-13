@@ -158,45 +158,7 @@ run_prover(){
 	
 }
 
-
-
-echo && echo -e " 
-aleo testnet3 激励测试一键部署脚本
-关注作者twitter:   https://twitter.com/simplefish3
-不定期更新撸毛教程
- ———————————————————————
- 1.安装 aleo
- 2.运行 prover 节点
- 3.运行 client 节点 (目前阶段暂时不需要运行client，可跳过)
- 4.查看 aleo 地址和私钥
- 5.进入 screen 查看节点的运行情况，注意进入screen后，退出screen的命令是ctrl+A+D
- 6.强制关闭 screen(使用kill的方式强制关闭screen，谨慎使用)
- ———————————————————————
- " && echo
-
-read -e -p " 请输入数字 [1-6]:" num
-case "$num" in
-1)
 	install_snarkos
     	;;
-2)
     	run_prover
     	;;
-3)
-    	run_client
-    	;;
-4)
-    	cat ${KeyFile}
-    	;;
-5)
-	go_into_screen
-	;;
-6)	
-	kill_screen
-	;;
-
-*)
-    echo
-    echo -e "请输入正确的数字!"
-    ;;
-esac
